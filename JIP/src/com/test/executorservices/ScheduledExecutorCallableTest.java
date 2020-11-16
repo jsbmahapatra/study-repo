@@ -2,6 +2,13 @@ package com.test.executorservices;
 
 import java.util.concurrent.*;
 
+/**
+ * Schedule a Task to execute with initial delay :
+ * 3 Tasks are there : Task1, Task2, Task3.
+ * Task2 is scheduled to start by 5 Milli Sec delay.
+ * By that time Task1 & Task3 will be executed and then Task2 will be executed
+ * Note : Task2 is a Callable task we can use its result.
+ */
 public class ScheduledExecutorCallableTest {
     public static void main(String[] args) {
         ScheduledExecutorService executorService = Executors.newScheduledThreadPool(10);

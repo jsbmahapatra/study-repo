@@ -5,6 +5,11 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Schedule a Task to execute repeatedly :
+ * We have a Runnable Task. We are running that task in a ScheduleExecutor.
+ * And we want the task to be run in every 1 second and start with delay 5 sec.
+ */
 public class ScheduledExecutorRepeatTest {
     private static int counter = 0;
 
